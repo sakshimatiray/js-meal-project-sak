@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script href="App.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav class="nav-bar" >
+                <a href="https://fitmencook.com/how-to-build-a-meal-plan-tips-hints/" target="_blank"><img src="logo.jpg" alt="logo" id="food-logo"/></a>
+                   
+                <a href="https://www.safefood.net/how-to/meal-plan" id="anchor-tag" target="_blank"> <i>Meal Planner</i></a>
+            </nav>
+        </header>
+        <main>
+            <div class="form">
+                <form>
+                    <div id="inputs">
+                        <input id="in1" type="number" placeholder="Height" />
+                        <input id="in2" type="number" placeholder="Weight" />
+                        <input id="in3" type="number" placeholder="age" />
+                    </div>
+                    <div id="Select">
+                        <select id="gender">
+                            <option>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Transgender</option>
+                        </select>
+                        <select id="Activity">
+                            <option>Activity Level</option>
+                            <option>Light</option>
+                            <option>Moderate</option>
+                            <option>Active</option>
+                        </select>
+                    </div>
+                    <input type="button" onclick="getCalories()" value="Generate Meal" id="btn" />
+                </form>
+            </div>
+     <div Class="cards">
+                <div>
+                  
+                    <div class="card1">
+                        <h2>BREAKFAST</h2>
+                        <img class="card-img-top" id="img1" src="https://th.bing.com/th/id/OIP.dKjwaLxsISy-pvv-iOKYrgHaJ-?pid=ImgDet&rs=1"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h3 id="meal1">Meal 1</h3>
+                            <p id="calori1">
+                            </p>
+                            <input type="button" onclick="getrecipe(0)" value="GET RECIPE" id="r1" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>LUNCH</h2>
+                    <div class="card2">
+                        <img id="img2" src="https://th.bing.com/th/id/OIP.dKjwaLxsISy-pvv-iOKYrgHaJ-?pid=ImgDet&rs=1"  alt="Card image cap">
+                        <div class="card-body">
+                            <h3 id="meal2">Meal 2</h3>
+                            <p id="calori2"></p>
+                            <input type="button" onclick="getrecipe(1)" value="GET RECIPE" id="r2" />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>DINNER</h2>
+                    <div class="card3">
+                        <img id="img3" src="https://th.bing.com/th/id/OIP.dKjwaLxsISy-pvv-iOKYrgHaJ-?pid=ImgDet&rs=1"  alt="Card image cap">
+                        <div class="card-body">
+                            <h3 id="meal3">Meal 3</h3>
+                            <p id="calori3"></p>
+                            <input type="button" onclick="getrecipe(2)" value="GET RECIPE" id="r3" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </main>
+            <footer>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Steps</th>
+                        <th>Equipments</th>
+                    </tr>
+                </thead>
+                <tbody id="data-output">
+                    <!-- Prodcuts from javascript file in here. -->
+                </tbody>
+            </table>
+    </div>
+    </footer>
+    <script src="App.js"></script>
+
+</body>
+
+</html>
